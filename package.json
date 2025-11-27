@@ -1,0 +1,56 @@
+{
+  "name": "tp_integrador",
+  "version": "1.0.0",
+  "description": "Aplicacion de Pagos Modulares",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc -p .",
+    "start": "node dist/app.js",
+    "test": "vitest --run",
+    "test:coverage": "vitest --run --coverage",
+    "lint": "eslint src/**/*.ts --fix",
+    "lint:check": "eslint src/**/*.ts",
+    "precommit": "npm run lint:check",
+    "sonar": "sonar-scanner -Dproject.settings=sonar-project.properties",
+    "coverage:lcov": "vitest run --coverage --coverage.reporter=lcov"
+  },
+  "dependencies": {
+    "express": "^4",
+    "pino": "^9",
+    "zod-express-middleware": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4",
+    "@types/node": "^20",
+    "@types/supertest": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "eslint": "^8.57.1",
+    "supertest": "^7",
+    "tsx": "^4",
+    "typescript": "^5",
+    "vitest": "^2"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-unused-vars": "warn",
+      "no-console": "warn",
+      "prefer-const": "error"
+    },
+    "ignorePatterns": [
+      "dist/",
+      "node_modules/"
+    ]
+  }
+}
