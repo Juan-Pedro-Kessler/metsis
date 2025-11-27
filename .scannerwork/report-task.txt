@@ -1,0 +1,7 @@
+organization=juan-pedro-kessler
+projectKey=juan-pedro-kessler
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.76841
+dashboardUrl=https://sonarcloud.io/dashboard?id=juan-pedro-kessler
+ceTaskId=AZrDsUEAOu1fLVx1AM9O
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZrDsUEAOu1fLVx1AM9O
